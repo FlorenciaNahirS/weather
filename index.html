@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <header class="search-bar">
+            <input type="text" id="search">
+            <button type="submit" for="search" class="btn-search"><svg stroke="currentColor" fill="none"
+                    stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg></button>
+        </header>
+
+        <main>
+            <section class="weather">
+                <article class="weather-now">
+                    <div class="weather-info">
+                        <h2 id="now">Today</h2>
+                        <h1 id="temp">00° C</h1>
+                        <h4 id="like">Feels like: 00° C</h4>
+                        <h4 id="humedity">Humedity: 0%</h4>
+                        <h4 id="uv">uv: 0%</h4>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="images/01d.png" alt="" id="main-icon">
+                        <p id="description">Sunny</p>
+                    </div>
+                </article>
+                <article class="weather-today">
+                    <div class="hours" id="hours">
+                        <!--div class="hour" id="hour">
+                            <div class="hour-temp">
+                                <h3>22°</h3>
+                                <img src="images/01d.png" alt="" class="icon">
+                            </div>
+                            <p>17:00</p>
+                        </!--div-->
+                    </div>
+                </article>
+            </section>
+
+            <section class="weather-week">
+                <aticle class="week" id="week">
+                    <!--div-- class="day">
+                        <h3 class="day-name">Mon.</h3>
+                        <img src="images/01d.png" alt="" class="icon">
+                        <div class="temp">
+                            <p class="maxTep">34°</p>
+                            <p class="minTep">24°</p>
+                        </div>
+                    </!div-->
+                </aticle>
+            </section>
+        </main>
+
+    </div>
+
+   
+
+    <script src="js/weatherApi.js"></script>
+    <!--script-- src="js/provincesApi.js"></!--script-->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+</body>
+
+</html>
