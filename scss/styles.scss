@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 body{ 
@@ -51,7 +53,7 @@ $radius: 20px;
     }
     .weather{
         background-color: rgba(#fff, .7);
-        height: 60vh;
+        height: 55vh;
         margin: 30px 0 20px;
         border-radius: $radius;
         padding: 20px;
